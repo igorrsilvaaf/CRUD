@@ -1,0 +1,53 @@
+unit UProduto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.Mask, Vcl.DBCtrls, Vcl.ComCtrls;
+
+type
+  TFrmProduto = class(TForm)
+    Panel1: TPanel;
+    BtnIncluir: TBitBtn;
+    BtnSalvar: TBitBtn;
+    BtnCancelar: TBitBtn;
+    BtnAlterar: TBitBtn;
+    BtnDeletar: TBitBtn;
+    BtnPesquisar: TBitBtn;
+    PgCadastroProdutos: TPageControl;
+    Cadastros: TTabSheet;
+    EdtCodBarras: TDBEdit;
+    Label1: TLabel;
+    EdtCodReferencia: TDBEdit;
+    Label2: TLabel;
+    EdtDescCompleta: TEdit;
+    Label3: TLabel;
+    EdtDescResumida: TEdit;
+    Label4: TLabel;
+    CbAtivo: TDBComboBox;
+    Label5: TLabel;
+    DbTipoProduto: TDBComboBox;
+    Label6: TLabel;
+    CbUsoConsumo: TDBComboBox;
+    Label7: TLabel;
+    CbPermiteVenda: TDBComboBox;
+    Label8: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmProduto: TFrmProduto;
+
+implementation
+
+uses
+  TelaPrincipal;
+
+{$R *.dfm}
+
+end.

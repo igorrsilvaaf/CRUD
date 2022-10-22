@@ -1,0 +1,18 @@
+program PSYMTER;
+
+uses
+  Vcl.Forms,
+  TelaPrincipal in '..\DCU\TelaPrincipal.pas' {FrmTelaPrincipal},
+  UClientes in '..\DCU\UClientes.pas' {FrmClientes},
+  UPesquisaClientes in 'UPesquisaClientes.pas' {FrmPesquisaClientes},
+  UContatos in 'UContatos.pas' {FrmContatos};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmTelaPrincipal, FrmTelaPrincipal);
+  Application.CreateForm(TFrmContatos, FrmContatos);
+  Application.Run;
+end.

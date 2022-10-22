@@ -1,0 +1,78 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 695
+  ClientWidth = 1080
+  Color = clInfoBk
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = Menu
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 14
+  object PnlFundo1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1080
+    Height = 695
+    Align = alClient
+    Color = 16777162
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 448
+    ExplicitTop = 264
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+  end
+  object Menu: TMainMenu
+    Left = 16
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Clientes1: TMenuItem
+        Caption = 'Clientes'
+      end
+      object Contas1: TMenuItem
+        Caption = 'Contas'
+      end
+      object Produto1: TMenuItem
+        Caption = 'Produto'
+      end
+      object Contatos1: TMenuItem
+        Caption = 'Contatos'
+      end
+    end
+    object Financeiro1: TMenuItem
+      Caption = 'Financeiro'
+      object Receber1: TMenuItem
+        Caption = 'Receber'
+      end
+      object Pagar1: TMenuItem
+        Caption = 'Pagar'
+      end
+      object Boletos1: TMenuItem
+        Caption = 'Boletos'
+      end
+    end
+    object Relatrios1: TMenuItem
+      Caption = 'Relat'#243'rios'
+      object ContasaReceber1: TMenuItem
+        Caption = 'Contas a Receber'
+      end
+      object ContasaPagar1: TMenuItem
+        Caption = 'Contas a Pagar'
+      end
+      object Clientes2: TMenuItem
+        Caption = 'Clientes'
+      end
+    end
+    object Outros1: TMenuItem
+      Caption = 'Outros'
+    end
+    object Fechar1: TMenuItem
+      Caption = 'Fechar'
+    end
+  end
+end

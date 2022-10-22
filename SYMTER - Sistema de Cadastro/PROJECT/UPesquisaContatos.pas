@@ -1,0 +1,91 @@
+unit UPesquisaContatos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.UI.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Phys,
+  FireDAC.Phys.PG, FireDAC.Phys.PGDef, FireDAC.VCLUI.Wait, Vcl.StdCtrls,
+  Vcl.Buttons, Vcl.DBCtrls, FireDAC.Comp.Client, FireDAC.Comp.DataSet, Vcl.Mask,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TFrmPesquisaContatos = class(TForm)
+    Panel1: TPanel;
+    GridContatos: TDBGrid;
+    QPesquisa: TFDQuery;
+    Conexao: TFDConnection;
+    DriverPG: TFDPhysPgDriverLink;
+    Dspesquisa: TDataSource;
+    Label1: TLabel;
+    Label2: TLabel;
+    BtnPesquisar: TBitBtn;
+    BtnLimpar: TBitBtn;
+    BtnImprimir: TBitBtn;
+    EdtRecebeValor: TEdit;
+    CbFiltro: TComboBox;
+    procedure BtnPesquisarClick(Sender: TObject);
+    procedure BtnLimparClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPesquisaContatos: TFrmPesquisaContatos;
+
+implementation
+
+uses
+  TelaPrincipal, UContatos;
+
+{$R *.dfm}
+
+procedure TFrmPesquisaContatos.BtnLimparClick(Sender: TObject);
+begin
+  CbFiltro.ItemIndex := -1;
+  EdtRecebeValor.Text := '';
+  FrmPesquisaContatos.QPesquisa.Close;
+end;
+
+procedure TFrmPesquisaContatos.BtnPesquisarClick(Sender: TObject);
+begin
+  FrmPesquisaContatos.QPesquisa.Close;
+  FrmPesquisaContatos.QPesquisa.SQL.Text := 'SELECT * FROM CONTATOS';
+
+  if CbFiltro.Text <> '' then
+    begin
+      case CbFiltro.ItemIndex of
+        0:begin    //id
+          FrmPesquisaContatos.QPesquisa.SQL.Add('WHERE id_cliente =:id_cliente');
+          FrmPesquisaContatos.QPesquisa.ParamByName('pid_cliente').AsInteger := StrToInt(EdtRecebeValor.Text);
+        end;
+
+        1:begin   //nome
+          FrmPesquisaContatos.QPesquisa.SQL.Add('WHERE nome ilike(:pnome)');
+          FrmPesquisaContatos.QPesquisa.ParamByName('pnome').AsString := ('%' + Trim(EdtRecebeValor.text) + '%');
+        end;
+
+        2:begin   //celular
+          FrmPesquisaContatos.QPesquisa.SQL.Add('WHERE celular =:pcelular');
+          FrmPesquisaContatos.QPesquisa.ParamByName('pcelular').AsString := (EdtRecebeValor.Text);
+        end;
+
+        3:begin   //Telefone
+          FrmPesquisaContatos.QPesquisa.SQL.Add('WHERE telefone :=ptelefone');
+          FrmPesquisaContatos.QPesquisa.ParamByName('ptelefone').AsString := (EdtRecebeValor.Text);
+        end;
+      end;
+    end;
+    FrmPesquisaContatos.QPesquisa.Open;
+    if FrmPesquisaContatos.QPesquisa.IsEmpty then
+    begin
+      MessageDlg('Nenhum registro encontrado', mtConfirmation, [mbOK], 0);
+    end;
+end;
+
+end.

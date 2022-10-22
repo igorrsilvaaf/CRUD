@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/06/23 22:47:21.000.264,=C:\Users\igor-\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/23 23:08:30.000.348,D:\Projetos\SYMTER - Sistema de Cadastro\DCU\Unit1.pas=C:\Users\igor-\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/23 23:08:30.000.348,D:\Projetos\SYMTER - Sistema de Cadastro\DCU\Unit1.dfm=C:\Users\igor-\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/23 23:08:37.000.371,D:\Projetos\SYMTER - Sistema de Cadastro\PROJECT\Project1.dproj=C:\Users\igor-\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/06/24 23:06:25.000.536,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\DCU\TelaPrincipal.dfm=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\DCU\Unit1.dfm</Transaction>
+    <Transaction>2022/06/24 23:06:25.000.536,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\DCU\TelaPrincipal.pas=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\DCU\Unit1.pas</Transaction>
+    <Transaction>2022/06/24 23:07:04.000.869,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\PSYMTER.dproj=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Project1.dproj</Transaction>
+    <Transaction>2022/06/24 23:07:38.000.260,=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit2.pas</Transaction>
+    <Transaction>2022/06/24 23:12:19.000.535,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\DCU\UClientes.pas=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit2.pas</Transaction>
+    <Transaction>2022/06/24 23:12:19.000.535,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\DCU\UClientes.dfm=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit2.dfm</Transaction>
+    <Transaction>2022/06/26 14:49:08.000.420,=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas</Transaction>
+    <Transaction>2022/06/26 14:49:35.000.086,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UPesquisaClientes.pas=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas</Transaction>
+    <Transaction>2022/06/26 14:49:35.000.086,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UPesquisaClientes.dfm=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.dfm</Transaction>
+    <Transaction>2022/06/28 22:24:05.000.478,=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas</Transaction>
+    <Transaction>2022/06/28 22:24:24.000.726,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UContatos.pas=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas</Transaction>
+    <Transaction>2022/06/28 22:24:24.000.726,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UContatos.dfm=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.dfm</Transaction>
+    <Transaction>2022/06/29 19:27:40.000.867,=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas</Transaction>
+    <Transaction>2022/06/29 19:28:10.000.655,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UPesquisaContatos.dfm=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.dfm</Transaction>
+    <Transaction>2022/06/29 19:28:10.000.655,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UPesquisaContatos.pas=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas</Transaction>
+    <Transaction>2022/07/01 21:31:26.000.423,=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas</Transaction>
+    <Transaction>2022/07/01 21:38:58.000.756,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.dfm=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UProduto.dfm</Transaction>
+    <Transaction>2022/07/01 21:38:58.000.756,D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\Unit1.pas=D:\Projetos\Projetos em Delphi\SYMTER - Sistema de Cadastro\PROJECT\UProduto.pas</Transaction>
+  </Transactions>
+</BorlandProject>

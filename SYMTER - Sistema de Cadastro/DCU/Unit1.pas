@@ -1,0 +1,47 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Buttons;
+
+type
+  TForm1 = class(TForm)
+    PnlFundo1: TPanel;
+    Menu: TMainMenu;
+    Cadastro1: TMenuItem;
+    Financeiro1: TMenuItem;
+    Relatrios1: TMenuItem;
+    Outros1: TMenuItem;
+    Fechar1: TMenuItem;
+    Clientes1: TMenuItem;
+    Contas1: TMenuItem;
+    Produto1: TMenuItem;
+    Contatos1: TMenuItem;
+    Receber1: TMenuItem;
+    Pagar1: TMenuItem;
+    Boletos1: TMenuItem;
+    ContasaReceber1: TMenuItem;
+    ContasaPagar1: TMenuItem;
+    Clientes2: TMenuItem;
+    PnlButon: TPanel;
+    BtnClientes: TBitBtn;
+    BtnContas: TBitBtn;
+    BtnProdutos: TBitBtn;
+    BtnContatos: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.
